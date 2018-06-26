@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "lint": "standard",
+    "test": "SET DEBUG=platziverse:* && ava tests/ --verbose",
     "setup": "SET DEBUG=platziverse:* && node setup.js"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "ava": "^0.25.0",
     "standard": "^11.0.1"
   },
   "dependencies": {
